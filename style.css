@@ -1,0 +1,174 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+font-family: 'Libre Franklin', sans-serif;
+
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    --font-size1: 0.7rem;
+    --font-size2: 1.2rem;
+    --font-size3: 4rem;
+    --font-fam: 'Libre Franklin', sans-serif;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    margin: 5rem 0;
+    text-align: center;
+    font-family: var(--font-fam);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-content{
+    margin-bottom: 2rem;
+}
+
+.header-content h1{
+    font-weight: 300;
+    font-size: var(--font-size3);
+    color: var(--gray);
+}
+
+.header-content .soon{
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.header-content .subscribe{
+    padding-top: 1rem;
+    color: var(--very-dark-blue);
+    font-size: var(--font-size2);
+}
+
+.input-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.input-container .text{
+    border-radius: 30px;
+    outline: transparent;
+    border: 1px solid var(--gray);
+    padding: 0.7rem 9rem 0.7rem 1rem;
+}
+
+.input-container .button {
+    padding: 0.7rem 3rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.button:hover{
+    opacity: 80%;
+    transition: 300ms ease;
+}
+
+#error{
+    position: absolute;
+    margin-left: -21rem;
+    margin-top: 5rem;
+    font-size: var(--font-size1);
+    color: var(--light-red);
+    font-style: italic;
+    display: none;
+}
+
+.middle-container{
+    width: 700px;
+}
+
+.footer-container{
+    margin: 5rem auto;
+}
+
+.copyright{
+    color: var(--gray);
+}
+
+.social-medias{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.social-medias img{
+    width: 15px;
+}
+
+.social-medias a{
+    border-radius: 50%;
+    padding: 0.8rem;
+    border: 1px solid var(--gray);
+}
+
+.social-medias a:hover{
+    transition: 300ms ease;
+    background-color: var(--blue);
+}
